@@ -24,21 +24,21 @@ class Parent
     }
     void operator ++()
     {
-        x++;
-        y++;
-        z++;
+        x++;    //1
+        y++;       //1
+        z++;            //1
     };
 };
 int main() 
 {
     Parent myObject;
     
-    cout << "values before overloaded " << endl;
+    cout << "values before overloaded " << endl;        // 0 0 0
     myObject.print();
     
-    ++myObject;
+    ++myObject;                 // pre-increment
     
-    cout << "values after overloaded " << endl;
+    cout << "values after overloaded " << endl;         // 1 1 1
     myObject.print();
     
     

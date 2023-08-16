@@ -35,7 +35,7 @@ class Complex
 int main()
 {
     Complex p1,p2,result;
-    p1.getData();
+    p1.getData();   
     p2.getData();
     
     result = p1 + p2;

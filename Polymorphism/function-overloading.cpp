@@ -30,16 +30,18 @@ class Parent
         y=b;
         cout << " The value of x and y is " << x << " & " <<y << endl;
     }
-    void print(char l)
-    {
-        c=l;
-        cout << " The value of c is " << c << endl;
-    }
+   
     void sum(int a,int b)
     {
         x=a;
         y=b;
         cout << " The sum is " << x + y << endl;
+    }
+
+     void print(char l)
+    {
+        c=l;
+        cout << " The value of c is " << c << endl;
     }
 };
 int main() 

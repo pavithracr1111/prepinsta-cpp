@@ -8,6 +8,7 @@ using namespace std;
 class Complex
 {
     int real,imag;
+
     public:
     void print()
     {
@@ -18,30 +19,30 @@ class Complex
         
             cout << real <<" +  "<< imag << " j "<< endl;
     }
-        void getData()
-        {
-            cin >> real >> imag ;
-        }
-             void operator ++()
-             {
-                real= ++real;
-                imag= ++imag;
+    void getData()
+    {
+        cin >> real >> imag ;
+    }   
+     void operator ++()
+    {
+        real= ++real;
+        imag= ++imag;
 
-             }
+    }
     
 };
 
 int main()
 {
     Complex p1;
-    p1.getData();
+    p1.getData();       // input 0 , 0
 
-    cout << " Before " << endl;
+    cout << " Before " << endl;     //before    o, o
     p1.print();
 
-    ++p1;
+    ++p1;           // pre-increment
     
-    cout << " After " << endl;
+    cout << " After " << endl;      // after 1 , 1
     p1.print();
 
     return 0;
@@ -73,7 +74,7 @@ class Complex
         {
             cin >> real >> imag ;
         }
-             void operator ++(int)      //dumy parameter
+             void operator ++(int)      //dumy parameter******
              {
                 real++;
                 imag++;
